@@ -5,7 +5,11 @@ def osszeg():
     m = int(Magasmezo.get())
     c = 3.14*r*r*m
     Terfogatmezo.delete(0, END)
-    Terfogatmezo.insert(0, 'Összeg: '+str(c))
+    Terfogatmezo.insert(0, ' '+str(c))
+    Vashengermezo.delete(0, END)
+    Vashengermezo.insert(0, ' '+str(c)
+    Fahenger.delete(0, END)
+    Fahenger.insert(0 ' '+str(c)
 Sugar=Label(foablak, text='Sugár (cm):')
 Sugar.grid()
 Sugarmezo=Entry(foablak)
