@@ -1,6 +1,11 @@
 from tkinter import *
 foablak=Tk()
-
+def osszeg():
+    r = int(Sugarmezo.get())
+    m = int(Magasmezo.get())
+    c = 3.14*r*r*m
+    Terfogatmezo.delete(0, END)
+    Terfogatmezo.insert(0, 'Összeg: '+str(c))
 Sugar=Label(foablak, text='Sugár (cm):')
 Sugar.grid()
 Sugarmezo=Entry(foablak)
