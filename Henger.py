@@ -6,10 +6,13 @@ def osszeg():
     c = 3.14*r*r*m
     Terfogatmezo.delete(0, END)
     Terfogatmezo.insert(0, ' '+str(c))
-    Vashengermezo.delete(0, END)
-    Vashengermezo.insert(0, ' '+str(c)
     Fahenger.delete(0, END)
     Fahenger.insert(0 ' '+str(c)
+def tomeg():
+    Terfogat=(Terfogatmezo.get())
+    tomeg=7800*Terfogatmezo
+    Vashengermezo.delete(0, END)
+    Vashengermezo.insert(0, ' '+str(tomeg)
 Sugar=Label(foablak, text='Sugár (cm):')
 Sugar.grid()
 Sugarmezo=Entry(foablak)
