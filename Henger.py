@@ -13,6 +13,11 @@ def tomeg():
     tomeg=7800*Terfogatmezo
     Vashengermezo.delete(0, END)
     Vashengermezo.insert(0, ' '+str(tomeg)
+def fatomeg():
+    Terfogat=(Terfogatmezo.get())
+    fatomeg=800*Terfogatmezo
+    Fahengermezo.delete(0, END)
+    Fahengermezo.insert(0, ' '+str(fatomeg)
 Sugar=Label(foablak, text='Sugár (cm):')
 Sugar.grid()
 Sugarmezo=Entry(foablak)
