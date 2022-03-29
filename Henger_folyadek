@@ -1,11 +1,15 @@
 from tkinter import *
 foablack=Tk()
-def osszeg():
-    r = int(elso.get())
-    m = int(masodik.get())
+def terfogat():
+    r = int(masodik.get())
+    m = int(harmadik.get())
     c = 3.14*r*r*m
     negyedik.delete(0, END)
-    negyedik.insert(0, ' '+str(c))
+    negyedik.insert(0, str(c)+'cm')
+def liter():
+    r = int(negyedik.get())
+    m = int(masodik.get())
+    d = terfogat*r*m
 liter=Label(foablack, text='Mennyi liter a Bor?')
 liter.grid()
 elso=Entry(foablack)
@@ -18,10 +22,14 @@ magassag=Label(foablack, text='Mekkora a Magasság?')
 magassag.grid()
 harmadik=Entry(foablack)
 harmadik.grid()
-gomb=Button(foablack, text='Kiszámít', command=osszeg)
+gomb=Button(foablack, text='Kiszámít', command=terfogat)
 gomb.grid()
 eredmeny=Label(foablack, text='Térfogat:')
 eredmeny.grid()
 negyedik=Entry(foablack)
 negyedik.grid()
+gomb2=Button(foablack, text='Liter', command=liter)
+gomb2.grid()
+otodik=Entry(foablack)
+otodik.grid()
 foablack.mainloop()
