@@ -7,9 +7,11 @@ def terfogat():
     negyedik.delete(0, END)
     negyedik.insert(0, str(c)+'cm')
 def liter():
-    r = int(negyedik.get())
-    m = int(masodik.get())
-    d = terfogat*r*m
+    a=int(elsomezo.get())
+    b=(Hordo)
+    c=b-a
+    otodik.delete(0, END)
+    otodik.insert(0, 'Ennyi fér még bele: '+str(c))
 liter=Label(foablack, text='Mennyi liter a Bor?')
 liter.grid()
 elso=Entry(foablack)
@@ -30,6 +32,9 @@ negyedik=Entry(foablack)
 negyedik.grid()
 gomb2=Button(foablack, text='Liter', command=liter)
 gomb2.grid()
+Hordo=50
 otodik=Entry(foablack)
 otodik.grid()
+gomb3=Button(foablack, text='Kivonás', command=liter)
+gomb3.grid(
 foablack.mainloop()
