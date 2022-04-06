@@ -1,1 +1,39 @@
 from tkinter import *
+foablack.title('A téglatest adatai')
+foablack.minsize(width=300, height=100)
+
+def ujablack():
+   foabl2=Toplevel(foablack)
+   foabl2.title('Eredmények')
+   foabl2.minsize(width=300, height=100)
+   sz1=Label(foabl2, text='Felszín:')
+   sz1.grid(row =1)
+   sz2=Label(foabl2, text='Térfogat:')
+   sz2.grid(row =2)
+   m1=Entry(foabl2)
+   m1.grid(row =1, column =2, sticky =W)
+   m2=Entry(foabl2)
+   m2.grid(row =2, column =2, sticky =W)
+   a=eval(m1.get())
+   b=eval(m2.get())
+   c=eval(m3.get())
+   felszin=2*(a*b+a*c+b*c)
+   terfogat=a*b*c
+   m1.delete(0, END)
+   m1.insert(0,str(felszin))
+   m2.delete(0, END)
+   m2.insert(0,str(terfogat))
+   foabl2.mainloop()
+
+szoveg1=Label(foablack, texz='a:')
+szoveg1.grid(row =1)
+szoveg2=Label(foablack, text='b:')
+szoveg2.grid(row =2)
+szoveg3=Label(foablack, text='c:')
+
+gomb1=Button(foablack, text='Számítás', command=ujablack)
+mezo1=Entry(foablack)
+mezo2=Entry(foablack)
+mezo3=Entry(foablack)
+
+foablack.mainloop()
