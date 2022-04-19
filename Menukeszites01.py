@@ -13,7 +13,7 @@ def felszin():
         a=eval(mezo1.get())
         b=eval(mezo2.get())
         c=eval(mezo3.get())
-        felszin=2*(a*b+a*c+b*c)
+        felszin=2*(a*b+a*c+b*c) if a!=0 and b!=0 and c!=0 else 'Hibás adat'
         mezo4.delete(0,END)
         mezo4.insert(0,str(felszin))
     abl3=Toplevel(foablack)
@@ -44,7 +44,7 @@ def terfogat():
         a=eval(mezo1.get())
         b=eval(mezo2.get())
         c=eval(mezo3.get())
-        terfogat=a*b*c
+        terfogat=a*b*c if a!=0 and b!=0 and c!=0 else 'Hibás adat'
         mezo4.delete(0,END)
         mezo4.insert(0,str(terfogat))
     abl3=Toplevel(foablack)
